@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BookDetailsScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/open_book"
+            android:contentDescription="TODO" />
+
+        <TextView
+
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:background="#00A5A0A0"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="@string/izmjenite_knjigu"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#2E2E2E"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/title_editext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="*Naslov knjige"
+            android:inputType="textPersonName"
+            android:min="1"
+            android:minHeight="48dp"
+            android:textColorHighlight="#03A9F4"
+            android:textColorHint="#757575"
+            android:textColorLink="#000000"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/author_editext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Autor"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHighlight="#03A9F4"
+            android:textColorLink="#000000"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/pages_editext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Broj stranica"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <Spinner
+            android:id="@+id/genres_spinner_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/zanrovi"
+            android:minHeight="48dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Procitao/la sam knjigu" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/update_book_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:onClick="onClickUpdate"
+                android:text="Izmjeni knjigu"
+                app:backgroundTint="#56C5BE"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

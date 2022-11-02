@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp"
+    tools:context=".AddBookScreen">
+
+    <LinearLayout
+        android:id="@+id/linearAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:background="#00FFFFFF"
+        android:dividerPadding="15dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/open_book" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+        <TextView
+
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:background="#00A5A0A0"
+
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="Vasa Knjiga,Vas Svijet"
+            android:textColor="#2E2E2E"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+
+            android:hint="*Naslov knjige"
+            android:inputType="textPersonName"
+            android:min="1"
+            android:textColorHighlight="#03A9F4"
+            android:textColorLink="#000000"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/author_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+
+            android:hint="Autor"
+            android:inputType="textPersonName"
+            android:textColorHighlight="#03A9F4"
+            android:textColorLink="#000000"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/pages_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Broj stranica"
+            android:inputType="number|text|textEmailAddress" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <Spinner
+            android:id="@+id/genres_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Procitao/la sam knjigu" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/add_book_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addBook"
+            android:text="Dodaj knjigu"
+
+
+            app:backgroundTint="#56C5BE" />
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

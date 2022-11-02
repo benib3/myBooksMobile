@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">myBooks</string>
+    <string name="title_activity_main">Main</string>
+
+
+    <!-- Strings used for app-->
+    <string name="sve_knjige">Sve knjige</string>
+    <string name="neprocitane_knjige">Neprocitane knjige</string>
+    <string name="title"><u>Rat Svijetova</u></string>
+    <string name="author">Mirko Njegos</string>
+    <string name="izmjenite_knjigu">Izmjenite knjigu</string>
+    <string name="zanrovi">Zanr</string>
+    <string name="stranica">Stranica</string>
+    <string name="procitana">Procitana</string>
+    <string name="neprocitane">Neprocitane</string>
+    <string name="dodaj">Dodaj</string>
+
+
+</resources>

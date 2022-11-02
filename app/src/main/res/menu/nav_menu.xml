@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/allBooks_menu_button"
+        android:orderInCategory="100"
+        android:title="@string/sve_knjige"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/unreadBook_menu_button"
+        android:orderInCategory="101"
+        android:title="@string/neprocitane"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add_menu_button"
+        android:icon="@drawable/plus2"
+        android:orderInCategory="102"
+        android:title="@string/dodaj"
+        app:showAsAction="always" />
+
+</menu>

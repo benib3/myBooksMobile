@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/drawable/splash.xml" value="0.2585" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/activity_add_book_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/activity_book_details_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/activity_book_genres_screen.xml" value="0.2477355072463768" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/activity_edit_book_screen.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/activity_main_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/activity_splash_screen.xml" value="0.2477355072463768" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/activity_unread_books_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/fragment_first.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/fragment_unread_books_list.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/list_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/list_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/recycler_row.xml" value="0.365625" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/recycler_row2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/layout/recycler_row_unread_books.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/menu/nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Korisnik/AndroidStudioProjects/myBooks/app/src/main/res/menu/toolbar.xml" value="0.18697916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
