@@ -2,6 +2,8 @@
 # myBooksMobile
 Simple project for personal book library.
 
+Code can be found in master branch.
+
 Main funcionalities are:
 
  💢Adding books to lists
