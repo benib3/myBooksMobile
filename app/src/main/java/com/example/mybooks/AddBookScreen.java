@@ -97,11 +97,12 @@ public class AddBookScreen extends AppCompatActivity {
     // function for saving new books
     //checks if title is used if not error is displayed
     public void addBook(View v){
-        String tempTitle=title_txt.getText().toString();
-        String tempAuthor=author_txt.getText().toString();
-        String tempGenre=genres.getSelectedItem().toString();;
-        int tempPages=Integer.parseInt(pages_txt.getText().toString());
-        boolean tempRead=isRead_chckbox.isChecked();
+        try{
+             String tempTitle=title_txt.getText().toString();
+             String tempAuthor=author_txt.getText().toString();
+             String tempGenre=genres.getSelectedItem().toString();;
+                int tempPages=Integer.parseInt(pages_txt.getText().toString());
+                 boolean tempRead=isRead_chckbox.isChecked();
 
 
         if (TextUtils.isEmpty(tempTitle.trim())){
@@ -109,7 +110,7 @@ public class AddBookScreen extends AppCompatActivity {
             return;
         }
 
-        try{
+
              saveNewBook(
                      tempTitle,
                      tempAuthor,
@@ -128,6 +129,7 @@ public class AddBookScreen extends AppCompatActivity {
 
             //Log.e(e);
         }
+
 
     }
     //fucntion for saving new book in room db

@@ -105,6 +105,7 @@ public class EditBookScreen extends AppCompatActivity {
         }catch (Exception e){
             Log.println(Log.ERROR,"Error",""+e);
         }
+        Toast.makeText(EditBookScreen.this, "Neuspjesan pokusaj izmjene knjige", Toast.LENGTH_SHORT).show();
 
 
     }

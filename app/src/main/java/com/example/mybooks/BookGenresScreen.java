@@ -12,9 +12,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.mybooks.adapters.BooksListAdapter;
+import com.example.mybooks.adapters.RecyclerTouchListener;
 import com.example.mybooks.db.Books;
 import com.example.mybooks.db.DatabaseHelper;
 
@@ -40,6 +42,8 @@ public class BookGenresScreen extends AppCompatActivity {
         loadGenresBooksList(valueGenre);
         mGenre=findViewById(R.id.idZanr);
         mGenre.setText("Zanr: "+valueGenre);
+
+        returnSelectedBook();
 
     }
     //toolbar navigation bar :)
@@ -79,6 +83,37 @@ public class BookGenresScreen extends AppCompatActivity {
         Intent intent=new Intent(this, UnreadBooksScreen.class);
         startActivity(intent);
 
+    }
+    //switching to new activity screen for details about the specific book
+    private void switchToDetailsScren(long value){
+        Intent intent=new Intent(this, BookDetailsScreen.class);
+        intent.putExtra("id",value);
+        startActivity(intent);
+    }
+    //function that has a listener implemented on recyclerview
+    //to listen for which position did user click on
+    private Books returnSelectedBook(){
+
+
+        RecyclerView mRecyclerView = findViewById(R.id.recyclerView3);
+        mRecyclerView.addOnItemTouchListener(
+                new RecyclerTouchListener(getApplicationContext(), mRecyclerView,
+                        new RecyclerTouchListener.OnTouchActionListener() {
+                            @Override
+                            public void onClick(View view, int position) {
+                                long j=booksListAdapter.getId(position);
+
+                                switchToDetailsScren(j);
+                            }
+                            @Override
+                            public void onRightSwipe(View view, int position) {
+                            }
+                            @Override
+                            public void onLeftSwipe(View view, int position) {
+                            }
+                        }));
+
+        return null;
     }
     private void loadBooksList() {
         DatabaseHelper db = DatabaseHelper.getDbInstance(this.getApplicationContext());
